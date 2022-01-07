@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name MAX6921)(type KiCad)(uri ${KIPRJMOD}/lib/ul_max6921aui)(options "")(descr ""))
+  (lib (name STM32G0B1)(type KiCad)(uri ${KIPRJMOD}/lib/ul_STM32G0B1KET6)(options "")(descr ""))
+  (lib (name LM2936MXP)(type KiCad)(uri ${KIPRJMOD}/lib/ul_LM2936MPX-3-0-NOPB)(options "")(descr ""))
+  (lib (name DIP28)(type KiCad)(uri ${KIPRJMOD}/lib/ul_9-1437539-2)(options "")(descr ""))
+)
