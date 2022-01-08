@@ -82,18 +82,16 @@ $EndComp
 Wire Wire Line
 	1650 4200 1250 4200
 Wire Wire Line
-	1650 2800 1250 2800
+	5050 2500 4650 2500
 Wire Wire Line
 	1650 3100 1250 3100
 Wire Wire Line
-	1650 3000 1250 3000
+	1650 2700 1250 2700
 Wire Wire Line
 	1650 3200 1250 3200
-Text Label 1300 2800 0    50   ~ 0
-RKEY1
 Text Label 1300 3100 0    50   ~ 0
 SCK
-Text Label 1300 3000 0    50   ~ 0
+Text Label 1300 2700 0    50   ~ 0
 RKEY3
 Text Label 1300 3200 0    50   ~ 0
 LOAD
@@ -642,24 +640,9 @@ Wire Wire Line
 	9700 2150 9700 2200
 Wire Wire Line
 	9700 2150 10300 2150
-$Comp
-L power:+3.3V #PWR03
-U 1 1 61EB0C81
-P 5150 1550
-F 0 "#PWR03" H 5150 1400 50  0001 C CNN
-F 1 "+3.3V" H 5165 1723 50  0000 C CNN
-F 2 "" H 5150 1550 50  0001 C CNN
-F 3 "" H 5150 1550 50  0001 C CNN
-	1    5150 1550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	5150 1550 5150 1750
-Wire Wire Line
-	5150 1750 5500 1750
-Wire Wire Line
-	1650 2900 1250 2900
-Text Label 1300 2900 0    50   ~ 0
+	1650 2600 1250 2600
+Text Label 1300 2600 0    50   ~ 0
 RKEY2
 Wire Wire Line
 	1250 3300 1650 3300
@@ -1029,7 +1012,7 @@ NoConn ~ 7300 1750
 NoConn ~ 7300 2850
 NoConn ~ 7300 2950
 NoConn ~ 7300 3050
-NoConn ~ 4650 2500
+NoConn ~ 1650 2800
 NoConn ~ 4650 2700
 NoConn ~ 4650 2800
 NoConn ~ 4650 2900
@@ -1037,12 +1020,11 @@ NoConn ~ 4650 3000
 NoConn ~ 4650 3100
 NoConn ~ 4650 3200
 NoConn ~ 4650 3300
-NoConn ~ 4650 3500
 NoConn ~ 4650 3600
 NoConn ~ 4650 3800
 NoConn ~ 4650 3900
-NoConn ~ 1650 2600
-NoConn ~ 1650 2700
+NoConn ~ 1650 2900
+NoConn ~ 1650 3000
 NoConn ~ 1650 3400
 NoConn ~ 1650 3500
 NoConn ~ 1650 3600
@@ -1124,11 +1106,37 @@ F 3 "~" H 3100 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4650 3400 5200 3400
+	4650 3400 4950 3400
 Text Label 4750 3400 0    50   ~ 0
 LPUART2_TX
 Wire Wire Line
 	3300 1700 3750 1700
 Text Label 3350 1700 0    50   ~ 0
 LPUART2_TX
+Text Label 4700 2500 0    50   ~ 0
+RKEY1
+Wire Wire Line
+	4650 3500 4950 3500
+Wire Wire Line
+	4950 3500 4950 3400
+Connection ~ 4950 3400
+Wire Wire Line
+	4950 3400 5200 3400
+Text Notes 1850 4600 0    50   ~ 0
+PB7 is LPUART2_RX. This signal is not used. So, tied with TX.
+$Comp
+L power:GND #PWR?
+U 1 1 61E39126
+P 5000 1850
+F 0 "#PWR?" H 5000 1600 50  0001 C CNN
+F 1 "GND" H 5005 1677 50  0000 C CNN
+F 2 "" H 5000 1850 50  0001 C CNN
+F 3 "" H 5000 1850 50  0001 C CNN
+	1    5000 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 1750 5000 1850
+Wire Wire Line
+	5000 1750 5500 1750
 $EndSCHEMATC
