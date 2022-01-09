@@ -3,4 +3,5 @@
   (lib (name LM2936)(type Legacy)(uri ${KIPRJMOD}/lib/ul_LM2936MPX-3-0-NOPB/LM2936MPX.lib)(options "")(descr ""))
   (lib (name STM32G0B1KET6)(type Legacy)(uri ${KIPRJMOD}/lib/ul_STM32G0B1KET6/STM32G0B1KET6.lib)(options "")(descr ""))
   (lib (name MAX6921AUI)(type Legacy)(uri ${KIPRJMOD}/lib/ul_max6921aui/max6921aui.lib)(options "")(descr ""))
+  (lib (name LM2936MM)(type Legacy)(uri ${KIPRJMOD}/lib/ul_LM2936MM-3.3/LM2936MM-3.3.lib)(options "")(descr ""))
 )
