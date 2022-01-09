@@ -90,10 +90,6 @@ Wire Wire Line
 	1650 3900 1250 3900
 Wire Wire Line
 	1650 4000 1250 4000
-Text Label 1300 3900 0    50   ~ 0
-SWCLK
-Text Label 1300 4000 0    50   ~ 0
-SWDIO
 Wire Wire Line
 	5500 1850 5250 1850
 Wire Wire Line
@@ -1144,4 +1140,8 @@ NoConn ~ 1150 5750
 NoConn ~ 1150 5850
 NoConn ~ 1150 5950
 NoConn ~ 1150 6050
+Text Label 1300 3900 0    50   ~ 0
+SWDIO
+Text Label 1300 4000 0    50   ~ 0
+SWCLK
 $EndSCHEMATC
