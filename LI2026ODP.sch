@@ -872,17 +872,6 @@ F 3 "~" H 3650 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C1
-U 1 1 61F87BB0
-P 2850 5700
-F 0 "C1" H 2965 5746 50  0000 L CNN
-F 1 "4.7u" H 2965 5655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 2888 5550 50  0001 C CNN
-F 3 "~" H 2850 5700 50  0001 C CNN
-	1    2850 5700
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR021
 U 1 1 61F8A46D
 P 2850 6000
@@ -1144,4 +1133,17 @@ Wire Wire Line
 Connection ~ 1050 6950
 Wire Wire Line
 	1050 6950 1050 7050
+$Comp
+L Device:CP C1
+U 1 1 61E33765
+P 2850 5700
+F 0 "C1" H 2968 5746 50  0000 L CNN
+F 1 "22uF" H 2968 5655 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I_Pad1.58x1.35mm_HandSolder" H 2888 5550 50  0001 C CNN
+F 3 "~" H 2850 5700 50  0001 C CNN
+	1    2850 5700
+	1    0    0    -1  
+$EndComp
+Text Notes 1150 7650 0    50   ~ 0
+See data sheet of LM2936MM-3.3 for ESR of C1: \n8ohm > ESR >= 300mohm
 $EndSCHEMATC
