@@ -69,7 +69,7 @@ F 3 "" H 10300 1850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1650 4200 1250 4200
+	1650 4200 1350 4200
 Wire Wire Line
 	5050 2500 4650 2500
 Wire Wire Line
@@ -1146,4 +1146,33 @@ F 3 "~" H 2850 5700 50  0001 C CNN
 $EndComp
 Text Notes 1150 7650 0    50   ~ 0
 See data sheet of LM2936MM-3.3 for ESR of C1: \n8ohm > ESR >= 300mohm
+$Comp
+L Device:C C5
+U 1 1 61ECB9EB
+P 1350 4400
+F 0 "C5" H 1465 4446 50  0000 L CNN
+F 1 "0.1u" H 1465 4355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 1388 4250 50  0001 C CNN
+F 3 "~" H 1350 4400 50  0001 C CNN
+	1    1350 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 4250 1350 4200
+$Comp
+L power:GND #PWR03
+U 1 1 61ECB9F2
+P 1350 4700
+F 0 "#PWR03" H 1350 4450 50  0001 C CNN
+F 1 "GND" H 1355 4527 50  0000 C CNN
+F 2 "" H 1350 4700 50  0001 C CNN
+F 3 "" H 1350 4700 50  0001 C CNN
+	1    1350 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 4700 1350 4550
+Connection ~ 1350 4200
+Wire Wire Line
+	1350 4200 1250 4200
 $EndSCHEMATC
