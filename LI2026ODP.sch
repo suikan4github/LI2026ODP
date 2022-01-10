@@ -81,7 +81,7 @@ Wire Wire Line
 Text Label 1300 3100 0    50   ~ 0
 SCK
 Text Label 1300 2700 0    50   ~ 0
-RKEY3
+KEY2
 Text Label 1300 3200 0    50   ~ 0
 LOAD
 Text Label 1300 4200 0    50   ~ 0
@@ -354,11 +354,11 @@ SEG_D
 Text Label 9950 3050 0    50   ~ 0
 SEG_DP
 Text Label 9950 3450 0    50   ~ 0
-KEY1
+HVKEY0
 Text Label 9950 3550 0    50   ~ 0
-KEY2
+HVKEY1
 Text Label 9950 3650 0    50   ~ 0
-KEY3
+HVKEY2
 Wire Wire Line
 	10300 3150 9900 3150
 Text Label 9950 3150 0    50   ~ 0
@@ -628,7 +628,7 @@ Wire Wire Line
 Wire Wire Line
 	1650 2600 1250 2600
 Text Label 1300 2600 0    50   ~ 0
-RKEY2
+KEY1
 Wire Wire Line
 	1250 3300 1650 3300
 Text Label 1300 3300 0    50   ~ 0
@@ -751,11 +751,11 @@ F 3 "" H 6850 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 6850 4550 0    50   ~ 0
-KEY1
+HVKEY0
 Text Label 6450 4550 0    50   ~ 0
-KEY2
+HVKEY1
 Text Label 6050 4550 0    50   ~ 0
-KEY3
+HVKEY2
 Wire Wire Line
 	6850 5050 7050 5050
 Connection ~ 6850 5050
@@ -772,11 +772,11 @@ Connection ~ 6050 5050
 Wire Wire Line
 	6050 5050 6050 5150
 Text Label 6100 5050 0    50   ~ 0
-RKEY3
+KEY2
 Text Label 6500 5050 0    50   ~ 0
-RKEY2
+KEY1
 Text Label 6900 5050 0    50   ~ 0
-RKEY1
+KEY0
 $Comp
 L power:GND #PWR015
 U 1 1 61F0F6A5
@@ -1044,7 +1044,7 @@ Wire Wire Line
 Text Label 3350 1700 0    50   ~ 0
 LPUART2_TX
 Text Label 4700 2700 0    50   ~ 0
-RKEY1
+KEY0
 Wire Wire Line
 	4650 3500 4950 3500
 Wire Wire Line
