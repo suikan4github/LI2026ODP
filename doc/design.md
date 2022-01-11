@@ -102,15 +102,17 @@ Because the high voltage input, regular voltage regulator may be destroyed. The 
 
 The datasheet has specific request to the output capacitor of LM2936MM-3.3. The capacitance and ESR is bit critical. Refer the datasheet for details. 
 
+The Tantalum capacitor like [TLJN226M010R3800](https://www.digikey.jp/en/products/detail/avx-corporation/TLJN226M010R3800/1765950) is suitable. 
+
 ### SWD pin protection
 ARM suggest to place the pull up registers to protect the SWD pins from the static discharge. 
 
-We don't have these registers. Alternatively, the programmer MUST follow the procedure in the reference manual of the [STM32G0B1KE](https://www.st.com/en/microcontrollers-microprocessors/stm32g0b1ke.html). The RM recommend to set the SWD pins as GPIN and pull up / down by software setting. Refere the reference manual. 
+We don't have these registers. Alternatively, the programmer MUST follow the procedure in the reference manual of the [STM32G0B1KE](https://www.st.com/en/microcontrollers-microprocessors/stm32g0b1ke.html). The RM recommend to set the SWD pins as GPIN and pull up / down by software setting. Refer the reference manual ( Section 40.3.3 "nternal pull-up & pull-down on SWD pins" of the RM0444 Rev 5 ). 
 
 ### NRST pin protection
 The STM32G0B1 has internal pull up register for the NRST signal. So, we don't need the external register. 
 
-The datasheet recommend to have the 0.1uF capacitor as parallel to the NRST input, to protect from the RF interference. 
+The datasheet recommend to have the 0.1uF capacitor as parallel to the NRST input, to protect from the RF interference ( Section 5.3.15 "NRST input characteristics" of the DS13560 Rev 2) . 
 
 ### Key matrix diode
 The EL-210 calculator shares the segment drive signal with the key matrix scan signal. But this low cost calculator doesn't have the protection diode on the board. Perhaps, it is internally implemented inside LI2026A. 
