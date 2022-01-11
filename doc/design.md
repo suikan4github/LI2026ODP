@@ -19,9 +19,9 @@ Bit | Signal
 09  | D6
 10  | D7
 11  | D8
-12  | 
-13  | 
-14  | 
+12  | N.A.
+13  | N.A.
+14  | N.A.
 15  | Seg DP
 16  | Seg d
 17  | Seg c
