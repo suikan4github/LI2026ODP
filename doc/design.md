@@ -3,7 +3,7 @@ This file explains how and why of the circuit design of LI2026ODP.
 
 ## Information for software
 ### VFD signal mapping
-The VFD driver MAX6921 is a shift register for the serial-parallel converter. This register's parallel pins are connected to the digit drive grid and the segments of VFD. 
+The VFD driver [MAX6921](https://www.maximintegrated.com/en/products/power/display-power-control/MAX6921.html) is a shift register for the serial-parallel converter. This register's parallel pins are connected to the digit drive grid and the segments of VFD. 
 
 Bit | Signal
 ----|-------------
@@ -75,7 +75,7 @@ Pin | Description
 4   | LPUART2 TX
 
 ### Power supply
-The the SHARP EL-210 which uses LI2026A has internal DC-DC coveter to supply the VFD segment / grid drive voltage and all other bias voltages. In the other words, LI2026A doesn't have any internal power supply which provide any voltage source to the board. 
+The the SHARP [EL-210](https://vintage-technology.club/pages/calculators/sharp/sharpel210.htm) which uses LI2026A has internal DC-DC coveter to supply the VFD segment / grid drive voltage and all other bias voltages. In the other words, LI2026A doesn't have any internal power supply which provide any voltage source to the board. 
 
 The original LI2026A seems to be PMOS design. That mean, it works with the minus voltage to the GND. See the [Wiki page](https://github.com/suikan4github/LI2026ODP/wiki/LI2026A). for details. Followings are the pin assignment of the LI2026A regarding the power supply 
 Pin | Description
@@ -98,14 +98,14 @@ Pin | Description
 Thus, int is positive voltage circuit internally. 
 
 ### Voltage regulator circuit
-Because the high voltage input, regular voltage regulator may be destroyed. The LM2936MM-3.3 can work with such the high voltage. 
+Because the high voltage input, regular voltage regulator may be destroyed. The [LM2936MM-3.3](https://www.ti.com/store/ti/en/p/product/?p=LM2936MM-3.3/NOPB) can work with such the high voltage. 
 
 The datasheet has specific request to the output capacitor of LM2936MM-3.3. The capacitance and ESR is bit critical. Refer the datasheet for details. 
 
 ### SWD pin protection
 ARM suggest to place the pull up registers to protect the SWD pins from the static discharge. 
 
-We don't have these registers. Alternatively, the programmer MUST follow the procedure in the reference manual of the STM32G0B1. The RM recommend to set the SWD pins as GPIN and pull up / down by software setting. Refere the reference manual. 
+We don't have these registers. Alternatively, the programmer MUST follow the procedure in the reference manual of the [STM32G0B1KE](https://www.st.com/en/microcontrollers-microprocessors/stm32g0b1ke.html). The RM recommend to set the SWD pins as GPIN and pull up / down by software setting. Refere the reference manual. 
 
 ### NRST pin protection
 The STM32G0B1 has internal pull up register for the NRST signal. So, we don't need the external register. 
