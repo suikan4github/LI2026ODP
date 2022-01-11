@@ -10,9 +10,10 @@ The on board STM32G0B1KET6 micro computer
 has enough speed and memory to run a complex
 firmware of a pocket calculator.
 
-In addition to the design, followings are provided in this repository :
+In addition to the CAD files, followings are provided in this repository :
 - [Schematic diagram](doc/LI2026ODP.pdf). 
 - [BOM](doc/LI2026ODP.csv)
+- [Design information](doc/design.md)
 
 # Photos
 
