@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - [Issue #3](https://github.com/suikan4github/LI2026ODP/issues/3) Add design note. 
 ### Changed
+- [Issue #6](https://github.com/suikan4github/LI2026ODP/issues/6) Add SWCLK silk.  
 - [Issue #7](https://github.com/suikan4github/LI2026ODP/issues/7) Refine the bypass capacitor allocation. 
 ### Fixed
 
