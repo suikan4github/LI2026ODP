@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased] - YYYY-MM-DD
 ### Added
+- [Issue #3](https://github.com/suikan4github/LI2026ODP/issues/3) Add design note. 
 ### Changed
 ### Fixed
 
