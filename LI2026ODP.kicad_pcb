@@ -2062,7 +2062,7 @@
   (gr_text SWCLK (at 119.888 120.142) (layer F.SilkS) (tstamp 61F5DFD6)
     (effects (font (size 0.6 0.5) (thickness 0.1)))
   )
-  (gr_text v1.0.0 (at 119.888 102.616 270) (layer F.SilkS)
+  (gr_text v1.0.1 (at 119.888 102.616 -90) (layer F.SilkS)
     (effects (font (size 0.7 0.7) (thickness 0.1)))
   )
   (gr_text https://github.com/suikan4github/LI2026ODP (at 119.38 116.205 -90) (layer B.SilkS)

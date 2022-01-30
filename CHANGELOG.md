@@ -11,8 +11,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - [Issue #6](https://github.com/suikan4github/LI2026ODP/issues/6) Add SWCLK silk.  
 - [Issue #7](https://github.com/suikan4github/LI2026ODP/issues/7) Refine the bypass capacitor allocation. 
+- [Issue #7](https://github.com/suikan4github/LI2026ODP/issues/7) Refine the bypass capacitor allocation. 
 ### Fixed
-- [Issue #5](https://github.com/suikan4github/LI2026ODP/issues/5)  Modify the U2 Footprint.   
+- [Issue #9](https://github.com/suikan4github/LI2026ODP/issues/8)  Version number should be updated.   
 
 ## [1.0.0] - YYYY-MM-DD
 ### Added
